@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+    
+
+<LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/textBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                style="@style/big"
+        android:text="Bank" />
+
+        <TextView
+        android:id="@+id/texth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                style="@style/big"
+        android:text="-" />
+        
+        
+    <TextView
+        android:id="@+id/textDepositNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                style="@style/big"
+        android:text="DepositNo" />
+ </LinearLayout>
+ 
+    <TextView
+        android:id="@+id/textAccountHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AccountHolder" />
+
+    <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content">
+    
+     <TextView
+        android:id="@+id/textMaturityAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaturityAmount" />
+    
+     <TextView
+        android:id="@+id/texth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" On " />
+     
+    <TextView
+        android:id="@+id/textMaturityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaturityDate" />
+    
+    </LinearLayout>
+    
+    
+ </LinearLayout>
+
+
+
+ 

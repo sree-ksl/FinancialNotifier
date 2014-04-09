@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.st.fn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="FinancialNotifierMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="VehiclesActivity"
+            android:label="Vehicle Insurance Menu" >
+        </activity>
+        <activity
+            android:name="UpdateVehicleActivity"
+            android:label="Update Vehicle Insurance" >
+        </activity>
+        <activity
+            android:name="AddVIActivity"
+            android:label="Add Vechicle Insurance" >
+        </activity>
+        <activity
+            android:name="LifeInsurancesActivity"
+            android:label="Life Insurances Menu" >
+        </activity>
+        <activity
+            android:name="AddLIActivity"
+            android:label="Add Life Insurance" >
+        </activity>
+        <activity
+            android:name="UpdateLifeInsuranceActivity"
+            android:label="Update Life Insurance" >
+        </activity>
+        <activity
+            android:name="UpcomingEventsActivity"
+            android:label="Upcoming Events" >
+        </activity>
+        <activity
+            android:name="PrefsActivity"
+            android:label="Preferences" >
+        </activity>
+        <activity
+            android:name="DepositsActivity"
+            android:label="Fixed Deposits" >
+        </activity>
+        <activity
+            android:name="AddFDActivity"
+            android:label="Add Fixed Deposits" >
+        </activity>
+        
+        <activity
+            android:name="UpdateDepositActivity"
+            android:label="Update Deposit" >
+        </activity>
+        
+        <activity
+            android:name="BackupRestoreActivity"
+            android:label="Backup and Restore" >
+        </activity>
+
+        <receiver android:name=".DateChangeBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.st.fn.NOTIFY" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

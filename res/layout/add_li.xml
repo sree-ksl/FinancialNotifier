@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Policy No." />
+
+        <EditText
+            android:id="@+id/editPolicyNo"
+            android:layout_width="120dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textPh"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Policy Holder" />
+        <EditText
+            android:id="@+id/editPolicyHolder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters|textCapWords" >
+
+        </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Policy Name " />
+
+        <EditText
+            android:id="@+id/editPolicyName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters" >
+
+        </EditText>
+        </LinearLayout>
+        
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/textCompany"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Company " />
+
+        <EditText
+            android:id="@+id/editCompany"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters|textCapWords" >
+        </EditText>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/textStartdate"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:text="Start Date  " />
+            
+            <EditText
+                android:id="@+id/editStartDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/buttonDateDialog"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="showStartDateDialog"
+                android:src="@drawable/datepicker" android:contentDescription="Date  Picker">
+            </ImageButton>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textDuedate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Due Date  " />
+
+            <EditText
+                android:id="@+id/editDueDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/buttonEndDateDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:onClick="showEndDateDialog"
+                android:src="@drawable/datepicker" >
+            </ImageButton>
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        <TextView
+            android:id="@+id/textPeriod"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Period In Years" />
+
+        <EditText
+            android:id="@+id/editPeriod"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+        </EditText>
+        
+        </LinearLayout>
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         
+               <TextView
+                   android:id="@+id/textAmount"
+                   android:layout_width="120dp"
+                   android:layout_height="wrap_content"
+                   android:text="Premium Amount" />
+
+        <EditText
+            android:id="@+id/editPremiumAmount"
+            android:layout_width="150dp"
+            android:inputType="number"
+            android:layout_height="wrap_content" >
+        </EditText>
+        </LinearLayout>
+        
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         
+               <TextView
+            android:id="@+id/textSum"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Sum Assured " />
+
+        <EditText
+            android:id="@+id/editSumAssured"
+            android:layout_width="150dp"
+            android:inputType="number"
+            android:layout_height="wrap_content" >
+        </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="add"
+            android:text="Add"></Button>
+    </LinearLayout>
+
+</ScrollView>

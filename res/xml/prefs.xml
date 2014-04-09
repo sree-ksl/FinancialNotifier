@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditTextPreference android:summary="Hour of the day at which notifications must be given." 
+         android:title="Hour Of The Day" android:key="hour"
+         android:defaultValue="6" />
+    <EditTextPreference android:summary="How many days before the event you want to be notified?" android:title="No. Of Days" android:key="nodays" android:defaultValue="7"/>
+
+</PreferenceScreen>

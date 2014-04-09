@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\add_vi.xml" />
+        <ignore path="res\layout\update_vi.xml" />
+        <ignore path="res\layout\vehicle.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res\layout\add_vi.xml" />
+        <ignore path="res\layout\update_vi.xml" />
+    </issue>
+</lint>
